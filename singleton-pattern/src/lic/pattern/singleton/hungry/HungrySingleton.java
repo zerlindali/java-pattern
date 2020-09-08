@@ -1,5 +1,7 @@
 package lic.pattern.singleton.hungry;
 
+import java.io.IOException;
+
 /**
  * @author ZerlindaLi create at 2020/9/4 11:20
  * @version 1.0.0
@@ -18,6 +20,5 @@ public class HungrySingleton {
     public HungrySingleton getInstance(){
         return hungrySingleton;
     }
-
 
 }
