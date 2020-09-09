@@ -14,9 +14,12 @@ public class LazySimpleSingleton {
 
     private LazySimpleSingleton(){}
 
-    public static synchronized LazySimpleSingleton getInstance(){
+    public static  LazySimpleSingleton getInstance(){
         if(lazySimpleSingleton == null){
-            lazySimpleSingleton = new LazySimpleSingleton();
+            synchronized (LazyStaticInnerClassSingleton.class){
+                lazySimpleSingleton = new LazySimpleSingleton();
+            }
+
         }
         return lazySimpleSingleton;
     }

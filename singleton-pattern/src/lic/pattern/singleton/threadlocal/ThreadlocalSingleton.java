@@ -8,12 +8,7 @@ package lic.pattern.singleton.threadlocal;
  */
 public class ThreadlocalSingleton {
 
-    private static ThreadLocal<ThreadlocalSingleton> threadLocal = new ThreadLocal<ThreadlocalSingleton>(){
-        @Override
-        protected ThreadlocalSingleton initialValue() {
-            return new ThreadlocalSingleton();
-        }
-    };
+    private static ThreadLocal<ThreadlocalSingleton> threadLocal = ThreadLocal.withInitial(() -> new ThreadlocalSingleton());
 
     private ThreadlocalSingleton (){}
 
