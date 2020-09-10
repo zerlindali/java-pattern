@@ -8,7 +8,7 @@ package lic.pattern.singleton.lazy;
  * 优点：节省了内存,线程不安全
  * 缺点：性能低
  */
-public class LazySimpleSingleton {
+public class LazySimpleSingleton implements Cloneable{
 
     private static LazySimpleSingleton lazySimpleSingleton;
 
@@ -22,6 +22,15 @@ public class LazySimpleSingleton {
 
         }
         return lazySimpleSingleton;
+    }
+
+    public LazySimpleSingleton clone(){
+        try {
+            return (LazySimpleSingleton)super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
 }

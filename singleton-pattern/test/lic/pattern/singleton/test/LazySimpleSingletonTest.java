@@ -1,5 +1,7 @@
 package lic.pattern.singleton.test;
 
+import lic.pattern.singleton.lazy.LazySimpleSingleton;
+
 /**
  * @author ZerlindaLi create at 2020/9/4 14:07
  * @version 1.0.0
@@ -8,10 +10,10 @@ package lic.pattern.singleton.test;
 public class LazySimpleSingletonTest {
 
     public static void main(String[] args) {
-        Thread t1 = new Thread(new ExectorThread());
-        Thread t2 = new Thread(new ExectorThread());
-
-        t1.start();
-        t2.start();
+        LazySimpleSingleton instance = LazySimpleSingleton.getInstance();
+        LazySimpleSingleton s = instance.clone();
+        System.out.println(s);
+        System.out.println(instance);
+        System.out.println(s == instance);
     }
 }
