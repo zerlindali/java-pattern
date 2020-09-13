@@ -22,13 +22,17 @@ public class StudentShallowTest {
         s.setSubjects(subjects);
 
         Student s2 = s.clone();
+        System.out.println("change before prototype:"+s);
+        System.out.println("change before clone:"+s2);
+        System.out.println("change before s2 == s :"+(s2 == s));
+        System.out.println("change before s2.getSubjects() == s.getSubjects() :" + (s2.getSubjects() == s.getSubjects()));
+        s2.setClasses(5);
         s2.getSubjects().add("英语");
-//        subjects.add("英文");
-//        s2.setSubjects();
-        System.out.println(s);
-        System.out.println(s2);
-        System.out.println(s2 == s);
-        System.out.println(s2.getSubjects() == s.getSubjects());
+        System.out.println("=======================");
+        System.out.println("change after prototype:"+s);
+        System.out.println("change after clone:"+s2);
+        System.out.println("change after s2 == s :"+(s2 == s));
+        System.out.println("change after s2.getSubjects() == s.getSubjects() :" + (s2.getSubjects() == s.getSubjects()));
 
     }
 }

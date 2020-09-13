@@ -1,7 +1,6 @@
 package lic.pattern.prototype.test;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import lic.pattern.prototype.shallow.Student;
 import lic.pattern.prototype.util.ObjectUtil;
 

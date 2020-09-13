@@ -15,7 +15,6 @@ public class SeriableCloneTest {
     public static void main(String[] args) {
         Student s1 = ObjectUtil.buildStudent();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
         try {
             ObjectOutputStream oos = new ObjectOutputStream(baos);
             oos.writeObject(s1);
