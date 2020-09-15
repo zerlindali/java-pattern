@@ -21,6 +21,6 @@ public class ZhaoLiu {
     }
 
     public void buyTicket() {
-        System.out.println("为赵六买从北京到武汉的票");
+        System.out.println("为赵六买从深圳到武汉的票");
     }
 }

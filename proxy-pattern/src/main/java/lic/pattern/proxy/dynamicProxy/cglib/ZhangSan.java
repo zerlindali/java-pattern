@@ -21,6 +21,6 @@ public class ZhangSan {
     }
 
     public void buyTicket() {
-        System.out.println("为张三买从北京到武汉的票");
+        System.out.println("为张三买从北京到南宁的票");
     }
 }
