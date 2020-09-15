@@ -8,10 +8,11 @@ package lic.pattern.proxy.dynamicProxy.v1;
 public class Test {
     public static void main(String[] args) {
 
-        ZhangSanFriends zhangSanFriends = new ZhangSanFriends(new ZhangSan());
-        zhangSanFriends.buyTicket();
+        HuangNiu huangNiu1 = new HuangNiu(new ZhangSan());
 
-        ZhangSanFriends zhaoLiuFriends = new ZhangSanFriends(new ZhaoLiu());
-        zhaoLiuFriends.buyTicket();
+        huangNiu1.buyTicket();
+
+        HuangNiu huangNiu2 = new HuangNiu(new ZhaoLiu());
+        huangNiu2.buyTicket();
     }
 }

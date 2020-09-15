@@ -8,6 +8,6 @@ package lic.pattern.proxy.dynamicProxy.v1;
 public class ZhaoLiu implements IBeiPiao {
     @Override
     public void buyTicket() {
-        System.out.println("为赵六买从北京到武汉的票");
+        System.out.println("为赵六买从深圳到武汉的票");
     }
 }

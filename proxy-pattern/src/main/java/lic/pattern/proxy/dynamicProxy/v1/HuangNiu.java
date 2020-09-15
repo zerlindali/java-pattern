@@ -5,11 +5,11 @@ package lic.pattern.proxy.dynamicProxy.v1;
  * @version 1.0.0
  * @description ZhangSanFriends
  */
-public class ZhangSanFriends implements IBeiPiao {
+public class HuangNiu implements IBeiPiao {
 
     private IBeiPiao beiPiao;
 
-    public ZhangSanFriends(IBeiPiao beiPiao){
+    public HuangNiu(IBeiPiao beiPiao){
         this.beiPiao = beiPiao;
     }
 
