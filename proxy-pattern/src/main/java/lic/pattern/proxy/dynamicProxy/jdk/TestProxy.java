@@ -21,7 +21,7 @@ public class TestProxy {
         zhangSan.buyTicket();
 
         byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{IBeiPiao.class});
-        FileOutputStream fos = new FileOutputStream("e://ZhangSan.class");
+        FileOutputStream fos = new FileOutputStream("IBeiPiao.class");
         fos.write(bytes);
         fos.flush();
         fos.close();

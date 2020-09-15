@@ -11,7 +11,7 @@ public class TestProxy {
     public static void main(String[] args) {
 
         // 利用CGlib的代理类可以将内存中的.class文件写入本地磁盘
-        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "e://cglib_proxy_class/");
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "cglib_proxy_class/");
 
         HuangNiu huangNiu = new HuangNiu();
 

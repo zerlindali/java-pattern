@@ -10,10 +10,9 @@ public class Test {
 
         HuangNiu huangNiu = new HuangNiu();
 
-        ZhaoLiu zhaoliu1 = (ZhaoLiu)huangNiu.getInstance(new ZhaoLiu("赵六"), new Class[]{String.class}, new Object[]{"赵六"});
+        ZhaoLiu zhaoliu1 = (ZhaoLiu)huangNiu.getInstance(new ZhaoLiu("赵六"),
+                                                         new Class[]{String.class},
+                                                         new Object[]{"赵六"});
         zhaoliu1.buyTicket();
-
-        WangMaZi wangMaZi = (WangMaZi)huangNiu.getInstance(new WangMaZi(), new Class[]{}, new Object[]{});
-        wangMaZi.buyTicket();
     }
 }
