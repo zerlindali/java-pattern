@@ -1,8 +1,5 @@
 package lic.pattern.proxy.dynamicProxy.jdk;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
-
 /**
  * @author ZerlindaLi create at 2020/9/15 9:57
  * @version 1.0.0
