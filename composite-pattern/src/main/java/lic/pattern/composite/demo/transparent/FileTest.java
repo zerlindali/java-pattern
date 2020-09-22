@@ -10,13 +10,17 @@ public class FileTest {
 
         File f1 = new File("qq");
         File f2 = new File("wx");
-        FileFold fileFold = new FileFold();
-        fileFold.setName("娱乐");
-        fileFold.setLevel(1);
-        fileFold.getDir().add(f1);
-        fileFold.getDir().add(f2);
+        Folder fileFold = new Folder("娱乐",1);
+        fileFold.put(f1);
+        fileFold.put(f2);
 
 
         File f3 = new File("dd");
+
+        Folder root = new Folder("D盘",0);
+        root.put(fileFold);
+        root.put(f3);
+
+        root.show();
     }
 }

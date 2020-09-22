@@ -7,5 +7,10 @@ package lic.pattern.composite.demo.transparent;
  */
 public abstract class Director {
     private String name;
+
+    public Director(String name) {
+        this.name = name;
+    }
+
     abstract void show();
 }

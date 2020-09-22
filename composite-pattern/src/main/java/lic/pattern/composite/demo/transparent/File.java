@@ -9,6 +9,7 @@ public class File extends Director {
     private String name;
 
     public File(String name) {
+        super(name);
         this.name = name;
     }
 
