@@ -3,7 +3,6 @@ package lic.pattern.decorator.logger;
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class JsonLogger extends LoggerDecorator{
