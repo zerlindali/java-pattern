@@ -59,21 +59,18 @@ public class FactoryClient extends Factory {
 
         private String cityCode;
 
-        private static HashMap<String, Context> ContextMap;
 
         private static HashMap<String, Payment> paymentMap;
 
-        private Payment(){}
-
         private Payment(String cityCode){
-            new Payment();
             this.cityCode = cityCode;
-            ContextMap.put(cityCode, contextMap.get(cityCode));
+
         }
 
         public static Payment getPayment(String cityCode){
             if(paymentMap.get(cityCode) == null){
-                new Payment(cityCode);
+                Payment payment = new Payment(cityCode);
+                paymentMap.put(cityCode, payment);
             }
             return paymentMap.get(cityCode);
         }
@@ -86,7 +83,7 @@ public class FactoryClient extends Factory {
          * @return 当面付相关API Client
          */
         public  com.alipay.easysdk.payment.facetoface.Client FaceToFace() throws Exception {
-            return new com.alipay.easysdk.payment.facetoface.Client(new Client(ContextMap.get(cityCode)));
+            return new com.alipay.easysdk.payment.facetoface.Client(new Client(FactoryClient.contextMap.get(cityCode)));
         }
 
     }
